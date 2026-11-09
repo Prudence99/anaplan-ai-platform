@@ -1,0 +1,3 @@
+[submodule "external/hermes-anaplan-mcp"]
+	path = external/hermes-anaplan-mcp
+	url = https://github.com/tinstep/hermes-anaplan-mcp.git

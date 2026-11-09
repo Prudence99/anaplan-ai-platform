@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "anaplan-live": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${PROJECT_ROOT}/external/hermes-anaplan-mcp/dist/index.js"]
+    },
+    "anaplan-analysis": {
+      "type": "stdio",
+      "command": "${PROJECT_ROOT}/.venv/bin/python",
+      "args": ["-m", "anaplan_platform.mcp.server"]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anaplan-ai-platform"
+version = "0.1.0"
+description = "MCP analysis adapter for Anaplan model formulas and audits"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp>=1.9,<2",
+  "pydantic>=2,<3",
+  "anaplan-grammar @ git+https://github.com/klameer/anaplan-grammar.git@7834a698150700b3520459aad83b39f0fa13838e",
+  "anaplan-estate @ git+https://github.com/klameer/anaplan-estate.git@c7f5d3f1e7b95143ab8006bca20a942687263fde",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+  where = ["src"]
